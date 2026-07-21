@@ -45,10 +45,18 @@ namespace Assignment2C_
 
             #region
             //question6
+            //string title = "clean code";
+            //int pages = 404;
+            //string sent = $"book:{title},,pages:{pages} ";
+            //Console.WriteLine(sent);
+            #endregion
+
+            #region
+            //question7
             string title = "clean code";
             int pages = 404;
-            string sent = $"book:{title},,pages:{pages} ";
-            Console.WriteLine(sent);
+            string sentence = string.Format("Book: {0}, Pages: {1}", title, pages);
+            Console.WriteLine(sentence);
             #endregion
 
         }
