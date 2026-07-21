@@ -95,9 +95,18 @@ namespace Assignment2C_
 
             #region
             //question11
-            int pages = 464;
-            string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
-            Console.WriteLine(sizeLabel);
+            //int pages = 464;
+            //string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
+            //Console.WriteLine(sizeLabel);
+            #endregion
+
+            #region
+            //question12
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            for (int i = 0; i < books.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {books[i]}");
+            }
             #endregion
         }
     }
