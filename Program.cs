@@ -150,11 +150,21 @@ namespace Assignment2C_
 
             #region
             //question17
-            foreach (string book in books)
+            //foreach (string book in books)
+            //{
+            //    if (book == "the pragmatic programmer")
+            //        continue;
+            //    Console.WriteLine(book);    
+            //}
+            #endregion
+            #region
+            //question18
+            static void PrintFirstBook()
             {
-                if (book == "the pragmatic programmer")
-                    continue;
-                Console.WriteLine(book);    
+                string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+                if (books.Length == 0)
+                    return;
+                Console.WriteLine(books[0]);
             }
             #endregion
         }
