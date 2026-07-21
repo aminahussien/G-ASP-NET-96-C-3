@@ -70,10 +70,27 @@ namespace Assignment2C_
 
             #region
             //question9
-            int pages = 404;
-            bool isAvailable = true;
-            if (pages > 300 && isAvailable)
-                Console.WriteLine("you can borrow this book");
+            //int pages = 404;
+            //bool isAvailable = true;
+            //if (pages > 300 && isAvailable)
+            //    Console.WriteLine("you can borrow this book");
+            #endregion
+
+            #region 
+            //question10
+            string title = "Refactoring";
+            switch (title)
+            {
+                case "Clean Code":
+                    Console.WriteLine("Great choice!");
+                    break;
+                case "Refactoring":
+                    Console.WriteLine("Nice pick!");
+                    break;
+                default:
+                    Console.WriteLine("Never heard of it");
+                    break;
+            }
             #endregion
         }
     }
