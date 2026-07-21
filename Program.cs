@@ -23,11 +23,18 @@ namespace Assignment2C_
 
             #region
             //question3
-            StringBuilder s = new StringBuilder();
-            s.Append("book list");
-            args.Append("- updated");
-            Console.WriteLine(s.ToString());
+            //StringBuilder s = new StringBuilder();
+            //s.Append("book list");
+            //args.Append("- updated");
+            //Console.WriteLine(s.ToString());
             #endregion
+
+            #region
+            //question4
+            StringBuilder s = new StringBuilder();
+            s.Replace("book list", "library");
+            #endregion
+
 
         }
     }
