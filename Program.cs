@@ -60,12 +60,20 @@ namespace Assignment2C_
             #endregion
             #region
             //question8
-            int pages = 404;
-            if (pages > 300)
-                Console.WriteLine("long book");
-            else
-                Console.WriteLine("short book");
+            //int pages = 404;
+            //if (pages > 300)
+            //    Console.WriteLine("long book");
+            //else
+            //    Console.WriteLine("short book");
 
+            #endregion
+
+            #region
+            //question9
+            int pages = 404;
+            bool isAvailable = true;
+            if (pages > 300 && isAvailable)
+                Console.WriteLine("you can borrow this book");
             #endregion
         }
     }
