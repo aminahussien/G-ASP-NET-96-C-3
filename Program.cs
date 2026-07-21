@@ -31,8 +31,16 @@ namespace Assignment2C_
 
             #region
             //question4
-            StringBuilder s = new StringBuilder();
-            s.Replace("book list", "library");
+            //StringBuilder s = new StringBuilder();
+            //s.Replace("book list", "library");
+            #endregion
+
+            #region
+            //question5
+            string title = "clean code";
+            int pages = 404;
+            string sent = "book:" + title + ",pages:" + pages;
+            Console.WriteLine(sent);
             #endregion
 
 
