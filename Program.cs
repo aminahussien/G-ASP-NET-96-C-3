@@ -102,10 +102,20 @@ namespace Assignment2C_
 
             #region
             //question12
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
             for (int i = 0; i < books.Length; i++)
             {
                 Console.WriteLine($"{i + 1}. {books[i]}");
+            }
+            #endregion
+
+            #region
+            //question13
+            int j = 0;
+            while (j < books.Length)
+            {
+                Console.WriteLine(books[j]);
+                j++;
             }
             #endregion
         }
