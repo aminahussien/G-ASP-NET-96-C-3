@@ -111,12 +111,21 @@ namespace Assignment2C_
 
             #region
             //question13
-            int j = 0;
-            while (j < books.Length)
-            {
-                Console.WriteLine(books[j]);
-                j++;
-            }
+            //int j = 0;
+            //while (j < books.Length)
+            //{
+            //    Console.WriteLine(books[j]);
+            //    j++;
+            //}
+            #endregion
+            #region
+            //question14
+            int count = 0;
+            do {
+                Console.WriteLine("checking book");
+                count++;
+
+            } while (count<3);
             #endregion
         }
     }
