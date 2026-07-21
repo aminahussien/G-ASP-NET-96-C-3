@@ -1,4 +1,6 @@
-﻿namespace Assignment2C_
+﻿using System.Text;
+
+namespace Assignment2C_
 {
     internal class Program
     {
@@ -14,12 +16,18 @@
 
             #region
             //question2 
-            string a = "clean code";
-            string b = "clean code";
-            Console.WriteLine(ReferenceEquals(a,b));
+            //string a = "clean code";
+            //string b = "clean code";
+            //Console.WriteLine(ReferenceEquals(a,b));
             #endregion
 
-
+            #region
+            //question3
+            StringBuilder s = new StringBuilder();
+            s.Append("book list");
+            args.Append("- updated");
+            Console.WriteLine(s.ToString());
+            #endregion
 
         }
     }
