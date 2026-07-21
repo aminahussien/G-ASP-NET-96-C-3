@@ -140,11 +140,21 @@ namespace Assignment2C_
 
             #region
             //question16
+            //foreach (string book in books)
+            //{
+            //    if (book == "Refactoring")
+            //        break;
+            //    Console.WriteLine(book);
+            //}
+            #endregion
+
+            #region
+            //question17
             foreach (string book in books)
             {
-                if (book == "Refactoring")
-                    break;
-                Console.WriteLine(book);
+                if (book == "the pragmatic programmer")
+                    continue;
+                Console.WriteLine(book);    
             }
             #endregion
         }
