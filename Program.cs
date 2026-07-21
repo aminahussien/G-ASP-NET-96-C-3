@@ -53,12 +53,20 @@ namespace Assignment2C_
 
             #region
             //question7
-            string title = "clean code";
-            int pages = 404;
-            string sentence = string.Format("Book: {0}, Pages: {1}", title, pages);
-            Console.WriteLine(sentence);
+            //string title = "clean code";
+            //int pages = 404;
+            //string sentence = string.Format("Book: {0}, Pages: {1}", title, pages);
+            //Console.WriteLine(sentence);
             #endregion
+            #region
+            //question8
+            int pages = 404;
+            if (pages > 300)
+                Console.WriteLine("long book");
+            else
+                Console.WriteLine("short book");
 
+            #endregion
         }
     }
 }
