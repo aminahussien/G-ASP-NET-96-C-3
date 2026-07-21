@@ -120,12 +120,21 @@ namespace Assignment2C_
             #endregion
             #region
             //question14
-            int count = 0;
-            do {
-                Console.WriteLine("checking book");
-                count++;
+            //int count = 0;
+            //do {
+            //    Console.WriteLine("checking book");
+            //    count++;
 
-            } while (count<3);
+            //} while (count<3);
+            #endregion
+
+            #region
+            //question15
+            foreach (string book in books)
+            { 
+                Console.WriteLine(book);
+            }
+
             #endregion
         }
     }
