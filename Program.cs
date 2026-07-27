@@ -1,4 +1,6 @@
-﻿namespace Assignment2C_
+﻿using System.Text;
+
+namespace Assignment2C_
 {
     internal class Program
     {
@@ -34,20 +36,26 @@
         //    prices[2] =15.0;
         //}
 
-        public static bool tryGetPrice(string title, out double price)
+        //public static bool tryGetPrice(string title, out double price)
+        //{
+        //    if (title == "clean code")
+        //    {
+        //        price = 25.5;
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        price = 0.0;
+        //        return false;
+        //    }
+
+
+        //}
+
+        public static void printBookInfo(string title , int pages =300)
         {
-            if (title == "clean code")
-            {
-                price = 25.5;
-                return true;
-            }
-            else
-            {
-                price = 0.0;
-                return false;
-            }
-
-
+            Console.WriteLine(title);
+            Console.WriteLine(pages);
         }
 
         static void Main(string[] args)
@@ -112,13 +120,20 @@
             //#endregion
 
             //Q9
+            //#region
+            //double price = 60.0;
+            //bool result = tryGetPrice("clean code",out price);
+            //if(result)
+            //{
+            //    Console.WriteLine(price);
+            //}
+            //#endregion
+
+            //Q10
             #region
-            double price = 60.0;
-            bool result = tryGetPrice("clean code",out price);
-            if(result)
-            {
-                Console.WriteLine(price);
-            }
+            printBookInfo("clean code");
+            int pages = 90;
+            printBookInfo("clean code", pages);
             #endregion
 
         }
