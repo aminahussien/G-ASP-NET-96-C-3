@@ -52,11 +52,13 @@ namespace Assignment2C_
 
         //}
 
-        public static void printBookInfo(string title , int pages =300)
+        public static void printbookinfo(string title, int pages = 300)
         {
             Console.WriteLine(title);
             Console.WriteLine(pages);
         }
+
+
 
         static void Main(string[] args)
         {
@@ -130,10 +132,15 @@ namespace Assignment2C_
             //#endregion
 
             //Q10
+            //#region
+            //printBookInfo("clean code");
+            //int pages = 90;
+            //printBookInfo("clean code", pages);
+            //#endregion
+
+            //Q11
             #region
-            printBookInfo("clean code");
-            int pages = 90;
-            printBookInfo("clean code", pages);
+            printbookinfo(pages, "clean code"); //can not do it 
             #endregion
 
         }
