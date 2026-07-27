@@ -2,6 +2,10 @@
 {
     internal class Program
     {
+        public static void printMessage()
+        {
+            Console.WriteLine("hello from the library !");
+        }
         static void Main(string[] args)
         {
             //Q1
@@ -11,12 +15,17 @@
             //#endregion
 
             //Q2
+            //#region
+            //int[,] shelfCopies = {
+            //    {3,5},
+            //    {1,4}
+            //};
+            //Console.WriteLine(shelfCopies[1, 0]);
+            //#endregion
+
+            //Q3
             #region
-            int[,] shelfCopies = {
-                {3,5},
-                {1,4}
-            };
-            Console.WriteLine(shelfCopies[1, 0]);
+            printMessage();
             #endregion
         }
 
