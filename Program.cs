@@ -2,9 +2,13 @@
 {
     internal class Program
     {
-        public static void printMessage()
-        {
-            Console.WriteLine("hello from the library !");
+        //public static void printMessage()
+        //{
+        //    Console.WriteLine("hello from the library !");
+        //}
+        public static void printBookTitlle(string title)
+        { 
+            Console.WriteLine( "Book title: "+ title);
         }
         static void Main(string[] args)
         {
@@ -24,8 +28,13 @@
             //#endregion
 
             //Q3
+            //#region
+            //printMessage();
+            //#endregion
+
+            //Q4
             #region
-            printMessage();
+            printBookTitlle("clean code");
             #endregion
         }
 
