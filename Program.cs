@@ -17,10 +17,16 @@
         //}
 
 
-        public static void applyDiscount(double[] prices)
+        //public static void applyDiscount(double[] prices)
+        //{
+        //    prices[0] -= 5;
+        //}
+
+        public static void addBounusPage(ref int pages)
         {
-            prices[0] -= 5;
+            pages += 50;
         }
+
         static void Main(string[] args)
         {
             //Q1
@@ -59,13 +65,19 @@
             //#endregion
 
             //Q6
+            //#region
+            //double[] prices = { 25.5, 40.0};
+            //applyDiscount(prices);
+            //Console.WriteLine(prices[0]);
+            ////cause it a reference type 
+            //#endregion
+
+            //Q7
             #region
-            double[] prices = { 25.5, 40.0};
-            applyDiscount(prices);
-            Console.WriteLine(prices[0]);
-            //cause it a reference type 
-
-
+            int pages = 400;
+            Console.WriteLine(pages);
+            addBounusPage(ref pages);
+            Console.WriteLine(pages);
             #endregion
         }
 
