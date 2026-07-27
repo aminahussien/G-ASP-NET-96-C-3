@@ -11,9 +11,15 @@
         //    Console.WriteLine( "Book title: "+ title);
         //}
 
-        public static void addBounusPage(int pages)
+        //public static void addBounusPage(int pages)
+        //{
+        //    pages += 50;
+        //}
+
+
+        public static void applyDiscount(double[] prices)
         {
-            pages += 50;
+            prices[0] -= 5;
         }
         static void Main(string[] args)
         {
@@ -43,12 +49,22 @@
             //#endregion
 
             //Q5
+            //#region
+            //int pages = 400;
+            //Console.WriteLine(pages);
+            //addBounusPage(pages);
+            //Console.WriteLine(pages);
+            ////nothing changes cause it just calling by value , the mthod just recieve a copy of the value that the variable has and the variable pages remains with the same value 
+
+            //#endregion
+
+            //Q6
             #region
-            int pages = 400;
-            Console.WriteLine(pages);
-            addBounusPage(pages);
-            Console.WriteLine(pages);
-            //nothing changes cause it just calling by value , the mthod just recieve a copy of the value that the variable has and the variable pages remains with the same value 
+            double[] prices = { 25.5, 40.0};
+            applyDiscount(prices);
+            Console.WriteLine(prices[0]);
+            //cause it a reference type 
+
 
             #endregion
         }
