@@ -22,9 +22,16 @@
         //    prices[0] -= 5;
         //}
 
-        public static void addBounusPage(ref int pages)
+        //public static void addBounusPage(ref int pages)
+        //{
+        //    pages += 50;
+        //}
+
+        public static void replaceArray(ref double[] prices)
         {
-            pages += 50;
+            prices[0] =10.0;
+            prices[1] =12.5;
+            prices[2] =15.0;
         }
 
         static void Main(string[] args)
@@ -73,11 +80,19 @@
             //#endregion
 
             //Q7
+            //#region
+            //int pages = 400;
+            //Console.WriteLine(pages);
+            //addBounusPage(ref pages);
+            //Console.WriteLine(pages);
+            //#endregion
+
+            //Q8
             #region
-            int pages = 400;
-            Console.WriteLine(pages);
-            addBounusPage(ref pages);
-            Console.WriteLine(pages);
+            double[] prices = { 25.0, 40.0,33.75};
+            replaceArray(ref prices);
+            Console.WriteLine(prices.Length);
+
             #endregion
         }
 
