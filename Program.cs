@@ -27,11 +27,27 @@
         //    pages += 50;
         //}
 
-        public static void replaceArray(ref double[] prices)
+        //public static void replaceArray(ref double[] prices)
+        //{
+        //    prices[0] =10.0;
+        //    prices[1] =12.5;
+        //    prices[2] =15.0;
+        //}
+
+        public static bool tryGetPrice(string title, out double price)
         {
-            prices[0] =10.0;
-            prices[1] =12.5;
-            prices[2] =15.0;
+            if (title == "clean code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0.0;
+                return false;
+            }
+
+
         }
 
         static void Main(string[] args)
@@ -88,12 +104,23 @@
             //#endregion
 
             //Q8
-            #region
-            double[] prices = { 25.0, 40.0,33.75};
-            replaceArray(ref prices);
-            Console.WriteLine(prices.Length);
+            //#region
+            //double[] prices = { 25.0, 40.0,33.75};
+            //replaceArray(ref prices);
+            //Console.WriteLine(prices.Length);
 
+            //#endregion
+
+            //Q9
+            #region
+            double price = 60.0;
+            bool result = tryGetPrice("clean code",out price);
+            if(result)
+            {
+                Console.WriteLine(price);
+            }
             #endregion
+
         }
 
     }
