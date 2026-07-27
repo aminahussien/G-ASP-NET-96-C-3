@@ -6,9 +6,14 @@
         //{
         //    Console.WriteLine("hello from the library !");
         //}
-        public static void printBookTitlle(string title)
-        { 
-            Console.WriteLine( "Book title: "+ title);
+        //public static void printBookTitlle(string title)
+        //{ 
+        //    Console.WriteLine( "Book title: "+ title);
+        //}
+
+        public static void addBounusPage(int pages)
+        {
+            pages += 50;
         }
         static void Main(string[] args)
         {
@@ -33,8 +38,18 @@
             //#endregion
 
             //Q4
+            //#region
+            //printBookTitlle("clean code");
+            //#endregion
+
+            //Q5
             #region
-            printBookTitlle("clean code");
+            int pages = 400;
+            Console.WriteLine(pages);
+            addBounusPage(pages);
+            Console.WriteLine(pages);
+            //nothing changes cause it just calling by value , the mthod just recieve a copy of the value that the variable has and the variable pages remains with the same value 
+
             #endregion
         }
 
