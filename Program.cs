@@ -52,12 +52,20 @@ namespace Assignment2C_
 
         //}
 
-        public static void printbookinfo(string title, int pages = 300)
-        {
-            Console.WriteLine(title);
-            Console.WriteLine(pages);
-        }
+        //public static void printbookinfo(string title, int pages = 300)
+        //{
+        //    Console.WriteLine(title);
+        //    Console.WriteLine(pages);
+        //}
 
+        public static void printAllTitles(params string[] titles)
+        { 
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
+        
+        }
 
 
         static void Main(string[] args)
@@ -139,8 +147,13 @@ namespace Assignment2C_
             //#endregion
 
             //Q11
+            //#region
+            //printbookinfo(pages, "clean code"); //can not do it 
+            //#endregion
+
+            //Q12
             #region
-            printbookinfo(pages, "clean code"); //can not do it 
+            printAllTitles("clean code","programming","groking algo");
             #endregion
 
         }
