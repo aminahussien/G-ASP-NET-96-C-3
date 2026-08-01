@@ -44,20 +44,27 @@
             //#endregion
 
             //Q5
+            //#region
+            //Book book = new Book();
+            //Genre genre0 = Genre.Fiction;
+            //Genre genre1 = Genre.NonFiction;
+            //Genre genre2 = Genre.Science;
+
+            //int value0 = (int)genre0;
+            //int value1 = (int)genre1;
+            //int value2 = (int)genre2;
+
+            //Console.WriteLine(value0);
+            //Console.WriteLine(value1);
+            //Console.WriteLine(value2);
+
+            //#endregion
+
+            //Q6
             #region
-            Book book = new Book();
-            Genre genre0 = Genre.Fiction;
-            Genre genre1 = Genre.NonFiction;
-            Genre genre2 = Genre.Science;
-
-            int value0 = (int)genre0;
-            int value1 = (int)genre1;
-            int value2 = (int)genre2;
-
-            Console.WriteLine(value0);
-            Console.WriteLine(value1);
-            Console.WriteLine(value2);
-
+            int genreNumber = 1;
+            Genre genre = (Genre)genreNumber;
+            Console.WriteLine(genre);
             #endregion
 
 
