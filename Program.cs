@@ -1,10 +1,17 @@
 ﻿namespace Assignment2C_
 {
+    public enum Genre
+    { 
+        Fiction,
+        NonFiction,
+        Science
+    }
     public class Book
     {
         private string password = "secret";
         internal int copiesInStock = 5;
         public string title = "clean code";
+         internal Genre Genre = Genre.Science;
     }
     public class Program
     {
@@ -25,10 +32,17 @@
 
 
             //Q3
+            //#region
+            //Book book = new Book();
+            //Console.WriteLine(book.title);
+            //#endregion
+
+            //Q4
             #region
             Book book = new Book();
-            Console.WriteLine(book.title);
+            Console.WriteLine(book.Genre);  
             #endregion
+
 
         }
     }
