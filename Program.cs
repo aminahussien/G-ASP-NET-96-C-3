@@ -1,10 +1,18 @@
 ﻿namespace Assignment2C_
 {
-    internal class Program
+    public class Book
+    {
+        private string password = "secret";
+
+    }
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Q1
+            #region
+            Console.WriteLine(password);
+            #endregion
         }
     }
 }
