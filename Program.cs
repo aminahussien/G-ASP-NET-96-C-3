@@ -11,8 +11,11 @@
         {
             //Q1
             #region
-            Console.WriteLine(password);
+            Book book = new Book();
+            Console.WriteLine(book.password); //password is inaccessable 
             #endregion
+
+           
         }
     }
 }
