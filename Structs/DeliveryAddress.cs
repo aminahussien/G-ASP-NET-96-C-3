@@ -1,7 +1,7 @@
 ﻿
 namespace Assignment2C_.Structs
 {
-    internal struct DeliveryAddress
+    public struct DeliveryAddress
     {
         string city;
         string street;
